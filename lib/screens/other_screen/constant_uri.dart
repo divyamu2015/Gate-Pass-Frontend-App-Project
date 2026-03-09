@@ -1,5 +1,5 @@
-const String baseUrl = "https://t3845w6p-8003.inc1.devtunnels.ms/";
-const String imageBaseUrl = "https://t3845w6p-8003.inc1.devtunnels.ms";
+const String baseUrl = "https://417sptdw-8003.inc1.devtunnels.ms/";
+const String imageBaseUrl = "https://417sptdw-8003.inc1.devtunnels.ms";
 
 class Urlsss {
   //static const String registerUrl = "${baseUrl}userapp/register/";
@@ -10,4 +10,4 @@ class Urlsss {
   static const String uploadResume = "${baseUrl}userapp/job-applications/";
     //  static const String regDoctorUrl = "${baseUrl}userapp/doctor_register/";
 }
-//https://t3845w6p-8003.inc1.devtunnels.ms/
+//https://417sptdw-8003.inc1.devtunnels.ms/

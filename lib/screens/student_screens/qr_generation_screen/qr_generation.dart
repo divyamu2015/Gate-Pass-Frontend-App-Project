@@ -68,7 +68,7 @@ class _AutoQrGenerationScreenState extends State<AutoQrGenerationScreen> {
   Widget build(BuildContext context) {
    
     // backend returns relative path, build full URL
-    const baseUrl = 'https://t3845w6p-8003.inc1.devtunnels.ms';
+    const baseUrl = 'https://417sptdw-8003.inc1.devtunnels.ms';
 
     return Scaffold(
       backgroundColor: const Color(0xFFF8FBFF),

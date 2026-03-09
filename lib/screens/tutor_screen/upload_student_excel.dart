@@ -27,12 +27,12 @@ class _StudentExcelUploaderState extends State<StudentExcelUploader> {
 
   /// URLs
   String get fetchUrl =>
-      'https://t3845w6p-8003.inc1.devtunnels.ms/userapp/tutor_view_students/${widget.tutorId}/';
+      'https://417sptdw-8003.inc1.devtunnels.ms/userapp/tutor_view_students/${widget.tutorId}/';
 
   final String uploadUrl =
-      'https://t3845w6p-8003.inc1.devtunnels.ms/userapp/student/upload/';
+      'https://417sptdw-8003.inc1.devtunnels.ms/userapp/student/upload/';
   final String studentDeleteBase =
-      'https://t3845w6p-8003.inc1.devtunnels.ms/userapp/student/';
+      'https://417sptdw-8003.inc1.devtunnels.ms/userapp/student/';
 
   @override
   void initState() {

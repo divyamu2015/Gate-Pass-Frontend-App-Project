@@ -7,7 +7,7 @@ import 'package:http/http.dart' as http;
 
   Future<List<CompanyResponseModel>> fetchJobsByCompany(int companyId) async {
     final response = await http.get(
-      Uri.parse('https://t3845w6p-8003.inc1.devtunnels.ms/userapp/job_by_company/$companyId'),
+      Uri.parse('https://417sptdw-8003.inc1.devtunnels.ms/userapp/job_by_company/$companyId'),
     );
     if (response.statusCode == 200) {
       final data = json.decode(response.body);

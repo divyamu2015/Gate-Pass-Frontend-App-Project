@@ -3,7 +3,7 @@ import 'package:http/http.dart' as http;
 
 Future<dynamic> fetchLeaveDetails(int studentId) async {
    final url = Uri.parse(
-    "https://t3845w6p-8003.inc1.devtunnels.ms/userapp/list-student-requests/$studentId/",
+    "https://417sptdw-8003.inc1.devtunnels.ms/userapp/list-student-requests/$studentId/",
   );
   //print(url);
 

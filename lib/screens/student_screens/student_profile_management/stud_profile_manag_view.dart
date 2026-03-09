@@ -58,7 +58,7 @@ class _StudentProfileScreenState extends State<StudentProfileScreen>
 
   Future<Map<String, dynamic>> fetchStudentData(int id) async {
     final url = Uri.parse(
-      'https://t3845w6p-8003.inc1.devtunnels.ms/userapp/student/$id/profile/',
+      'https://417sptdw-8003.inc1.devtunnels.ms/userapp/student/$id/profile/',
     );
     final response = await http.get(url);
 
@@ -125,7 +125,7 @@ class _StudentProfileScreenState extends State<StudentProfileScreen>
     ).showSnackBar(const SnackBar(content: Text('Uploading image...',style: TextStyle(color: Colors.green),)));
 
     final url = Uri.parse(
-      'https://t3845w6p-8003.inc1.devtunnels.ms/userapp/student/${widget.studId}/update/',
+      'https://417sptdw-8003.inc1.devtunnels.ms/userapp/student/${widget.studId}/update/',
     );
 
     final request = http.MultipartRequest('PATCH', url);
@@ -249,7 +249,7 @@ class _StudentProfileScreenState extends State<StudentProfileScreen>
                           backgroundImage: _imageFile != null
                               ? FileImage(_imageFile!)
                               : NetworkImage(
-                                      'https://t3845w6p-8003.inc1.devtunnels.ms${student['image']}',
+                                      'https://417sptdw-8003.inc1.devtunnels.ms${student['image']}',
                                     )
                                     as ImageProvider,
                         ),

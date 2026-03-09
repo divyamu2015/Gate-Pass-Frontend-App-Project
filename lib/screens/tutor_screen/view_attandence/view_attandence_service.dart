@@ -4,7 +4,7 @@ import 'package:http/http.dart' as http;
 
 Future<List<AttendanceModel>> fetchTodayAttendance(int tutorId) async {
   final url = Uri.parse(
-    "https://t3845w6p-8003.inc1.devtunnels.ms/userapp/tutor/$tutorId/attendance/today/"
+    "https://417sptdw-8003.inc1.devtunnels.ms/userapp/tutor/$tutorId/attendance/today/"
   );
 
   final response = await http.get(url);

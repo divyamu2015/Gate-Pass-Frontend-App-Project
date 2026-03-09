@@ -152,7 +152,7 @@ class _ViewStudentLeaveRequestState extends State<ViewStudentLeaveRequest> {
 
   Future<bool> updateAcceptLeaveStatus(int id, String status) async {
     final url = Uri.parse(
-      "https://t3845w6p-8003.inc1.devtunnels.ms/userapp/tutor-requests/${widget.tutorId}/approve/$id/",
+      "https://417sptdw-8003.inc1.devtunnels.ms/userapp/tutor-requests/${widget.tutorId}/approve/$id/",
     );
     // print(url);
 
@@ -167,7 +167,7 @@ class _ViewStudentLeaveRequestState extends State<ViewStudentLeaveRequest> {
 
   Future<bool> updateLeaveStatus(int id, String status) async {
     final url = Uri.parse(
-      "https://t3845w6p-8003.inc1.devtunnels.ms/userapp/tutor-requests/${widget.tutorId}/approve/$id/",
+      "https://417sptdw-8003.inc1.devtunnels.ms/userapp/tutor-requests/${widget.tutorId}/approve/$id/",
     );
     // print(url);
 
@@ -182,7 +182,7 @@ class _ViewStudentLeaveRequestState extends State<ViewStudentLeaveRequest> {
 
   Future<bool> rejectLeaveRequest(int id) async {
     final url = Uri.parse(
-      "https://t3845w6p-8003.inc1.devtunnels.ms/userapp/tutor-requests/${widget.tutorId}/reject/$id/",
+      "https://417sptdw-8003.inc1.devtunnels.ms/userapp/tutor-requests/${widget.tutorId}/reject/$id/",
     );
 
     final response = await http.post(

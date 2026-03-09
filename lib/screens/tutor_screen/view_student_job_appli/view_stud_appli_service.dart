@@ -4,7 +4,7 @@ import 'package:http/http.dart' as http;
 
 Future<List<ApplicationModel>> fetchAppliedStudents(int tutorId) async {
   final url = Uri.parse(
-    "https://t3845w6p-8003.inc1.devtunnels.ms/userapp/tutor/$tutorId/applied-students/",
+    "https://417sptdw-8003.inc1.devtunnels.ms/userapp/tutor/$tutorId/applied-students/",
   );
 
   final response = await http.get(url);
@@ -20,7 +20,7 @@ Future<List<ApplicationModel>> fetchAppliedStudents(int tutorId) async {
 
 Future<bool> approveApplication(int applicationId, int tutorId) async {
   final url = Uri.parse(
-    "https://t3845w6p-8003.inc1.devtunnels.ms/userapp/tutor/$tutorId/application/$applicationId/approve/",
+    "https://417sptdw-8003.inc1.devtunnels.ms/userapp/tutor/$tutorId/application/$applicationId/approve/",
   );
  // print(url);
   final res = await http.post(url);
@@ -30,7 +30,7 @@ Future<bool> approveApplication(int applicationId, int tutorId) async {
 
 Future<bool> rejectApplication(int applicationId, int tutorId) async {
   final url = Uri.parse(
-    "https://t3845w6p-8003.inc1.devtunnels.ms/userapp/tutor/$tutorId/application/$applicationId/reject/",
+    "https://417sptdw-8003.inc1.devtunnels.ms/userapp/tutor/$tutorId/application/$applicationId/reject/",
   );
 
   final res = await http.post(url);

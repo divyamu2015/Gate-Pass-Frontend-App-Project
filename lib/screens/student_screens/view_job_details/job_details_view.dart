@@ -147,7 +147,7 @@ class _JobsListScreenState extends State<JobsListScreen> {
     });
 
     final url =
-        'https://t3845w6p-8003.inc1.devtunnels.ms/userapp/job_by_company/${widget.companyId}/';
+        'https://417sptdw-8003.inc1.devtunnels.ms/userapp/job_by_company/${widget.companyId}/';
     try {
       final res = await http.get(Uri.parse(url));
       if (res.statusCode == 200) {
@@ -185,7 +185,7 @@ class _JobsListScreenState extends State<JobsListScreen> {
 
   Future<void> _applyForJob(int studentId, int jobId, File resumeFile) async {
     final uri = Uri.parse(
-      "https://t3845w6p-8003.inc1.devtunnels.ms/userapp/job-applications/",
+      "https://417sptdw-8003.inc1.devtunnels.ms/userapp/job-applications/",
     );
 
     final request = http.MultipartRequest("POST", uri);
@@ -234,7 +234,7 @@ class _JobsListScreenState extends State<JobsListScreen> {
       // if API provides relative path, try network by prefixing base
       final url = apiLogo.startsWith('http')
           ? apiLogo
-          : 'https://t3845w6p-8003.inc1.devtunnels.ms$apiLogo';
+          : 'https://417sptdw-8003.inc1.devtunnels.ms$apiLogo';
       logoImage = NetworkImage(url);
     } else {
       logoImage = FileImage(File(localFallbackImagePath));
@@ -477,7 +477,7 @@ class _JobsListScreenState extends State<JobsListScreen> {
 
     // ignore: unused_local_variable
     final logoUrl = job.logo.isNotEmpty
-        ? 'https://t3845w6p-8003.inc1.devtunnels.ms${job.logo}'
+        ? 'https://417sptdw-8003.inc1.devtunnels.ms${job.logo}'
         : null;
 
     return Container(
@@ -676,10 +676,10 @@ class _JobDetailPageState extends State<JobDetailPage> {
   Widget build(BuildContext context) {
     final job = widget.job;
     final jobLogoUrl = job.logo.isNotEmpty
-        ? 'https://t3845w6p-8003.inc1.devtunnels.ms${job.logo}'
+        ? 'https://417sptdw-8003.inc1.devtunnels.ms${job.logo}'
         : null;
     final companyLogoUrl = widget.companyLogo.isNotEmpty
-        ? 'https://t3845w6p-8003.inc1.devtunnels.ms${widget.companyLogo}'
+        ? 'https://417sptdw-8003.inc1.devtunnels.ms${widget.companyLogo}'
         : null;
 
     final headerImage = (jobLogoUrl != null)

@@ -119,7 +119,7 @@ class _ApplicationDetailsPageState extends State<ApplicationDetailsPage> {
     return ElevatedButton.icon(
       onPressed: () {
         final url =
-            Uri.parse("https://t3845w6p-8003.inc1.devtunnels.ms$resume");
+            Uri.parse("https://417sptdw-8003.inc1.devtunnels.ms$resume");
         launchUrl(url, mode: LaunchMode.externalApplication);
       },
       icon: const Icon(Icons.description_outlined),

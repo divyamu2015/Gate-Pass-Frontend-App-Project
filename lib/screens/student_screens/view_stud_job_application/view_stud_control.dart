@@ -5,7 +5,7 @@ import 'package:http/http.dart' as http;
 
 Future<List<JobApplication>> getJobApplications(int studentId) async {
   final url =
-      'https://t3845w6p-8003.inc1.devtunnels.ms/userapp/student/$studentId/job-applications/';
+      'https://417sptdw-8003.inc1.devtunnels.ms/userapp/student/$studentId/job-applications/';
 
   final response = await http.get(Uri.parse(url));
 
